@@ -29,7 +29,9 @@ class MapApiController {
 
     @GetMapping("/map/")
     List<RoleMenuMapping> all(@RequestParam(required = false) String method, @RequestParam(required = false) String text) {
+//        List<RoleMenuMapping> list = mapRepository.findAll();
         List<RoleMenuMapping> list = mapRepository.findAll();
+
 
 //        List<RoleDTO> roleList = list.stream()
 //                .map(r -> new RoleDTO(r.getRole()))
